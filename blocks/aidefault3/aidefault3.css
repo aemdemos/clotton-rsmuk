@@ -1,0 +1,66 @@
+
+.aidefault3-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Adjust height as needed */
+  background: url('./media_1df1ede268b3747146d1e2c4662fb4206cd6e2646.jpeg?width=2000&amp;format=webply&amp;optimize=medium') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px; /* Add padding to prevent content from touching the edges */
+}
+
+.aidefault3-wrapper > .block.aidefault3 {
+  display: flex;
+  flex-direction: row;
+  width: 100%; /* Adjust width as needed */
+  max-width: 1200px; /* Optional: max width for the content */
+  color: white; /* Assuming the text color is white for better contrast against the dark background */
+  align-items: center; /* Center align items vertically */
+  justify-content: space-between; /* Distribute space between text and image */
+}
+
+.aidefault3-wrapper > .block.aidefault3 > div {
+  display: flex;
+  flex-direction: row; /* Ensure side-by-side alignment */
+  justify-content: center;
+  align-items: center;
+}
+
+.aidefault3-wrapper > .block.aidefault3 > div:first-child {
+  flex: 2; /* Adjust flex values as needed to control the width ratio */
+  display: flex;
+  flex-direction: column; /* Stack text elements vertically */
+  align-items: flex-start; /* Align text to the left */
+  padding-right: 20px; /* Add padding to the right to separate text from image */
+}
+
+.aidefault3-wrapper > .block.aidefault3 > div:last-child {
+  flex: 1; /* Adjust flex values as needed to control the width ratio */
+  display: flex;
+  justify-content: flex-end; /* Align image to the right */
+  align-items: center;
+}
+
+.aidefault3-wrapper > .block.aidefault3 picture {
+  display: none; /* Hide the background image in the content */
+}
+
+.aidefault3-wrapper > .block.aidefault3 p,
+.aidefault3-wrapper > .block.aidefault3 h2,
+.aidefault3-wrapper > .block.aidefault3 .button-container {
+  margin: 10px 0;
+}
+
+.aidefault3-wrapper > .block.aidefault3 .button {
+  background-color: #007BFF; /* Adjust button color as needed */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.aidefault3-wrapper > .block.aidefault3 .button:hover {
+  background-color: #0056b3; /* Adjust hover color as needed */
+}

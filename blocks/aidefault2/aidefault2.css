@@ -1,0 +1,47 @@
+
+.aidefault2-wrapper {
+  display: flex;
+  align-items: center; /* Vertically center align the content */
+  justify-content: flex-start; /* Align content to the left */
+  position: relative;
+  background-image: url('path/to/your/image.jpg'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  height: 200px; /* Adjust the height as needed */
+  padding: 0 20px; /* Add horizontal padding */
+}
+
+.aidefault2-wrapper > .aidefault2 {
+  display: flex;
+  flex-direction: row; /* Ensure elements are side by side */
+  align-items: center; /* Center items vertically */
+  background-color: rgba(0, 123, 255, 0.8); /* Blue background with some transparency */
+  padding: 10px 20px;
+  position: relative;
+  width: auto; /* Adjust width to content */
+  max-width: 40%; /* Limit the width of the overlay */
+  height: auto; /* Adjust height to fit content */
+}
+
+.aidefault2-wrapper > .aidefault2 > div {
+  display: flex;
+  flex-direction: row; /* Ensure elements inside the nested div are side by side */
+  align-items: center; /* Center items vertically */
+}
+
+.aidefault2-wrapper > .aidefault2::before {
+  content: '';
+  width: 20px; /* Width of the small blue square */
+  height: 20px; /* Height of the small blue square */
+  background-color: #007bff; /* Blue color */
+  position: absolute;
+  bottom: -10px; /* Adjust position to overlap the main block */
+  left: -10px; /* Adjust position to overlap the main block */
+}
+
+.aidefault2-wrapper h1 {
+  color: white; /* White text color for contrast */
+  margin: 0; /* Remove default margin */
+  line-height: 1.2; /* Adjust line height */
+  align-self: center; /* Vertically center the text */
+}

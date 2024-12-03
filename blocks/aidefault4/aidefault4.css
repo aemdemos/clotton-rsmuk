@@ -1,0 +1,73 @@
+
+.aidefault4-wrapper > .aidefault4 > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between flex items */
+}
+
+.aidefault4-wrapper > .aidefault4 > ul > li {
+  position: relative;
+  flex: 1 1 calc(50% - 20px); /* Two items per row */
+  overflow: hidden;
+  height: 300px; /* Adjust height as needed */
+  border: none; /* Remove border */
+  background-color: transparent; /* Remove background color */
+  display: flex;
+  flex-direction: row; /* Ensure content is side by side */
+  align-items: center; /* Center content vertically */
+}
+
+.aidefault4-wrapper > .aidefault4 .aidefault4-card-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  z-index: 1;
+}
+
+.aidefault4-wrapper > .aidefault4 .aidefault4-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aidefault4-wrapper > .aidefault4 .aidefault4-card-body {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Ensure elements inside are stacked vertically */
+  justify-content: center; /* Center content vertically */
+  padding: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
+  z-index: 2;
+}
+
+.aidefault4-wrapper > .aidefault4 .aidefault4-card-body h2,
+.aidefault4-wrapper > .aidefault4 .aidefault4-card-body p {
+  margin: 0 0 10px 0; /* Add bottom margin for spacing */
+  text-align: left; /* Left-align text */
+}
+
+.aidefault4-wrapper > .aidefault4 .button-container {
+  align-self: flex-start; /* Align button to the left */
+  margin-top: 10px; /* Add margin for spacing */
+}
+
+.aidefault4-wrapper > .aidefault4 .button {
+  background-color: #3b63fb; /* Specific button color */
+  color: white;
+  padding: 10px 20px; /* Adjust padding for button size */
+  border-radius: 25px; /* More rounded corners */
+  font-size: 16px; /* Adjust font size */
+  text-align: center; /* Ensure text is centered within button */
+}
+
+.aidefault4-wrapper > .aidefault4 .button:hover,
+.aidefault4-wrapper > .aidefault4 .button:focus {
+  background-color: #1d3ecf; /* Specific hover color */
+}
